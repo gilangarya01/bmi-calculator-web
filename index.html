@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./dist/output.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./dist/output.css" rel="stylesheet" />
     <title>BMI Calculator</title>
-</head>
-<body>
-    <main class="w-full h-screen bg-blue-700 flex flex-col items-center justify-center text-white">
-        <h1 class="text-4xl font-semibold mb-10">BMI Calculator</h1>
-        <label for="height">
-            Your Height
-            <input id="height" type="text" class="inputHeight p-3 bg-gray-50 border border-gray-600 text-gray-900 text-sm rounded-md block w-36 mb-3" placeholder="Your height (cm)">
-        </label>
-        <label for="weight">
-            Your Weight
-            <input id="weight" type="text" class="inputWeight p-3 bg-gray-50 border border-gray-600 text-gray-900 text-sm rounded-md block w-36 mb-4" placeholder="Your Weight (kg)">
-        </label>
-        <div class="btnArea my-5">
-            <button class="calcBtn bg-red-700 hover:bg-red-800 rounded-xl text-md px-5 py-3">Calculate</button>
-            <button class="resetBtn text-black bg-yellow-400 hover:bg-yellow-500 rounded-xl text-md px-5 py-3">Reset</button>
-        </div>
-        <div class="my-5 border-2 border-white p-4 text-center">
-            <p>Result</p>
-            <input class="result text-gray-900 text-center rounded-lg p-1 text-lg" type="text" readonly>
-            <p class="categories">Categories : <b></b></p>
-        </div>
+  </head>
+  <body>
+    <main
+      class="w-full h-screen bg-blue-900 flex flex-col items-center justify-center text-white"
+    >
+      <h1 class="text-4xl font-semibold mb-10">BMI Calculator</h1>
+      <label for="height">
+        Your Height
+        <input
+          id="height"
+          type="text"
+          class="inputHeight p-3 bg-gray-50 border border-gray-600 text-gray-900 text-sm rounded-md block w-60 mb-3"
+          placeholder="Your height (cm)"
+        />
+      </label>
+      <label for="weight">
+        Your Weight
+        <input
+          id="weight"
+          type="text"
+          class="inputWeight p-3 bg-gray-50 border border-gray-600 text-gray-900 text-sm rounded-md block w-60 mb-4"
+          placeholder="Your Weight (kg)"
+        />
+      </label>
+      <div class="btnArea my-5">
+        <button
+          class="calcBtn bg-red-700 hover:bg-red-800 rounded-xl text-md px-5 py-3"
+        >
+          Calculate
+        </button>
+        <button
+          class="resetBtn text-black bg-yellow-400 hover:bg-yellow-500 rounded-xl text-md px-5 py-3"
+        >
+          Reset
+        </button>
+      </div>
+      <div class="my-5 border-2 border-white rounded-lg p-4 text-center">
+        <p>Result</p>
+        <input
+          class="result text-gray-900 text-center rounded-lg p-1 text-lg"
+          type="text"
+          readonly
+        />
+        <p class="categories">Categories : <b></b></p>
+      </div>
     </main>
 
     <!-- My Script -->
     <script src="assets/script.js"></script>
-</body>
+  </body>
 </html>
